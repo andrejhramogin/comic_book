@@ -34,6 +34,7 @@ public class MethodOutput {
         }
     }
 
+    //Выводит ComicBookSale (название, автор, жанр, продажи, дата продажи)
     public static void printComicSales(ComicBookSale cbs) {
         System.out.println(
                         UiMessage.TITLE + cbs.getTitle() + UiMessage.SEP +
@@ -43,6 +44,7 @@ public class MethodOutput {
                         UiMessage.DATA + cbs.getDate());
     }
 
+    //Выводит ComicBookSale в виде пары "жанр/продажи"
     public static void printComicSalesByGenre(ComicBookSale cbs) {
         System.out.println(
                         UiMessage.GENRE + cbs.getGenre() + UiMessage.SEP +

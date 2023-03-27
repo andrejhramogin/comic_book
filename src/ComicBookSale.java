@@ -2,10 +2,9 @@ import java.io.Serializable;
 import java.time.LocalDate;
 
 public class ComicBookSale extends ComicBook implements Serializable {
+    private static final long serialVersionUID = 1L;
 
     private LocalDate date;
-
-
 
     private int sale;
 
@@ -13,6 +12,12 @@ public class ComicBookSale extends ComicBook implements Serializable {
         super(genre);
         this.sale = sale;
     }
+
+    public ComicBookSale(String title, String author, int sale){
+        super(title, author);
+        this.sale = sale;
+    }
+
     public ComicBookSale(String title, String author, String genre, int sale, LocalDate date) {
         super(title, author, genre);
         this.sale = sale;

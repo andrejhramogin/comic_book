@@ -1,6 +1,7 @@
 import java.io.Serializable;
 
 public class ComicBook implements Serializable {
+    private static final long serialVersionUID = 1L;
 
     private String title;
     private String author;
@@ -16,6 +17,11 @@ public class ComicBook implements Serializable {
 
 
     public ComicBook() {
+    }
+
+    public ComicBook(String title, String author){
+        this.title = title;
+        this.author = author;
     }
 
     public ComicBook(String title, String author, String genre) {
@@ -173,3 +179,11 @@ public class ComicBook implements Serializable {
         this.numberOfSales = numberOfSales;
     }
 }
+/*
+Title: Ironman; Author: Iron; Publishing house: h1; Pages number: 33; Genre: action; Year of publication: 2020; Cost price: 34.0; Retail price: 43.0; Continuation: Yes; Quantity: 21; Sales volume: 29
+Title: Spiderman; Author: Spider; Publishing house: h2; Pages number: 55; Genre: action; Year of publication: 2022; Cost price: 45.0; Retail price: 54.0; Continuation: No; Quantity: 27; Sales volume: 23
+Title: Star Wars; Author: Lookas; Publishing house: h3; Pages number: 44; Genre: fantasy; Year of publication: 2022; Cost price: 56.0; Retail price: 65.0; Continuation: Yes; Quantity: 16; Sales volume: 34
+Title: Chippolino; Author: Radari; Publishing house: Italia; Pages number: 22; Genre: children`s story; Year of publication: 2010; Cost price: 23.0; Retail price: 33.0; Continuation: No; Quantity: 35; Sales volume: 15
+Title: Sherlok; Author: Dojl; Publishing house: London; Pages number: 33; Genre: detective; Year of publication: 2015; Cost price: 45.0; Retail price: 54.0; Continuation: Yes; Quantity: 40; Sales volume: 10
+
+ */

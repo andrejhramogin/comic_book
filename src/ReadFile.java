@@ -1,8 +1,6 @@
 import java.io.ObjectInputStream;
 import java.nio.file.Files;
 import java.nio.file.Paths;
-import java.util.ArrayList;
-import java.util.List;
 
 public class ReadFile   {
 
@@ -31,17 +29,4 @@ public class ReadFile   {
         }
         return bl;
     }
-
-   //    public static List<ComicBook> readListFromFile(){
-//        List<ComicBook> list = new ArrayList<>();
-//        try(ObjectInputStream ois = new ObjectInputStream(Files.newInputStream(Paths.get("comic.bin")))){
-//
-//            Base bl = (Base) ois.readObject();
-//            list = bl.getListComic();
-//
-//        }catch (Exception e){
-//            System.out.println(e.getMessage());
-//        }
-//        return list;
-//    }
 }
