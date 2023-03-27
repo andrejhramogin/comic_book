@@ -21,7 +21,13 @@ public class UiMessage {
     public static final String CONTINUATION = "Continuation: ";
     public static final String SALES_VOLUME = "Sales volume: ";
     public static final String DATA = "Data of sale: ";
-
+    public static final String ACTION = "action";
+    public static final String FANTASY = "fantasy";
+    public static final String ROMANTIC = "romantic";
+    public static final String THRILLER = "thriller";
+    public static final String DETECTIVE = "detective";
+    public static final String CHILDREN = "children`s story";
+    public static final String SCIENCE_FICTION = "science fiction";
     public static final String ENTER_TITLE = "Enter the title of the comic book: ";
     public static final String SEARCH_MENU = "Find by: title - enter 1, author - enter 2, genre - enter 3: ";
     public static final String GENRE_CHOICE = "Genre choice:" +
@@ -54,5 +60,4 @@ public class UiMessage {
     public static final String ENTER_THE_YEAR = "Enter the year: 2022, 2021 ... ";
     public static final String ENTER_THE_MONTH = "Enter the month: 1, 2 ... 11, 12 ";
     public static final String ENTER_THE_DAY = "Enter the number day of the month: ";
-
 }

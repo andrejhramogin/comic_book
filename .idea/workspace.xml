@@ -1,18 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="efd6a181-5e24-4dc3-a41f-4e935cf39887" name="Changes" comment="Commit 1">
-      <change afterPath="$PROJECT_DIR$/src/ComparatorSaleCbs.java" afterDir="false" />
+    <list default="true" id="efd6a181-5e24-4dc3-a41f-4e935cf39887" name="Changes" comment="Commit 2&#10;Добавлена функция поиска наиболее популярных жанров.&#10;sortSalesByGenre(), sortSaleComicBookSale(), ComparatorSaleCbs">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/comic.bin" beforeDir="false" afterPath="$PROJECT_DIR$/comic.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/comic2.bin" beforeDir="false" afterPath="$PROJECT_DIR$/comic2.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ComicBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ComicBook.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ComicBookSale.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ComicBookSale.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ComparatorSale.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ComparatorSaleCb.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MethodOutput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MethodOutput.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MethodSellStatistic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MethodSellStatistic.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MethodSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MethodSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UiMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UiMessage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,7 +25,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="branch1" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -64,6 +59,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -83,7 +79,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679902447323</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Commit 2&#10;Добавлена функция поиска наиболее популярных жанров.&#10;sortSalesByGenre(), sortSaleComicBookSale(), ComparatorSaleCbs">
+      <created>1679934723039</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1679934723039</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -111,7 +114,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Commit 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit 1" />
+    <MESSAGE value="Commit 2&#10;Добавлена функция поиска наиболее популярных жанров.&#10;sortSalesByGenre(), sortSaleComicBookSale(), ComparatorSaleCbs" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit 2&#10;Добавлена функция поиска наиболее популярных жанров.&#10;sortSalesByGenre(), sortSaleComicBookSale(), ComparatorSaleCbs" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

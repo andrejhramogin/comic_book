@@ -95,25 +95,25 @@ public class ComicBook implements Serializable {
         comicGenre = ComicGenre.getGenre(genre);
         switch (comicGenre) {
             case ACTION:
-                this.genre = "action";
+                this.genre = UiMessage.ACTION;
                 break;
             case FANTASY:
-                this.genre = "fantasy";
+                this.genre = UiMessage.FANTASY;
                 break;
             case ROMANTIC:
-                this.genre = "romantic";
+                this.genre = UiMessage.ROMANTIC;
                 break;
             case THRILLER:
-                this.genre = "thriller";
+                this.genre = UiMessage.THRILLER;
                 break;
             case DETECTIVE:
-                this.genre = "detective";
+                this.genre = UiMessage.DETECTIVE;
                 break;
             case CHILDREN_STORY:
-                this.genre = "children`s story";
+                this.genre = UiMessage.CHILDREN;
                 break;
             case SCIENCE_FICTION:
-                this.genre = "science fiction";
+                this.genre = UiMessage.SCIENCE_FICTION;
                 break;
         }
     }

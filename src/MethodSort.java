@@ -49,20 +49,16 @@ public class MethodSort {
     public static void sortSalesByGenre(List<ComicBookSale> list) {
 
         List<ComicBookSale> cbs = new ArrayList<>();
-        Collections.addAll(cbs, new ComicBookSale("children`s stories", 0),
-                new ComicBookSale("detective", 0),
-                new ComicBookSale("fantasy", 0),
-                new ComicBookSale("action", 0),
-                new ComicBookSale("science fiction", 0),
-                new ComicBookSale("thriller", 0),
-                new ComicBookSale("romantic", 0));
+        Collections.addAll(cbs, new ComicBookSale(UiMessage.CHILDREN, 0),
+                new ComicBookSale(UiMessage.DETECTIVE, 0),
+                new ComicBookSale(UiMessage.FANTASY, 0),
+                new ComicBookSale(UiMessage.ACTION, 0),
+                new ComicBookSale(UiMessage.SCIENCE_FICTION, 0),
+                new ComicBookSale(UiMessage.THRILLER, 0),
+                new ComicBookSale(UiMessage.ROMANTIC, 0));
 
-        for (int i = 0; i < list.size(); i++) {
-            ComicBookSale icb = list.get(i);
-
-            for (int j = 0; j < cbs.size(); j++) {
-                ComicBookSale jcb = cbs.get(j);
-
+        for (ComicBookSale icb : list) {
+            for (ComicBookSale jcb : cbs) {
                 if (icb.getGenre().equals(jcb.getGenre())) {
                     jcb.setSale(jcb.getSale() + icb.getSale());
                     break;
