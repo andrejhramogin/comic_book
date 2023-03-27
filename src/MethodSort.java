@@ -1,6 +1,5 @@
 import java.util.*;
 
-
 /**
  * Сортирует лист ComicBook по выбору: по названию, по общему объему продаж (популярности).
  * Выводит на консоль отсортированный лист.
@@ -22,30 +21,36 @@ public class MethodSort {
         }
     }
 
+    //Выводит List<ComicBook>, отсортированный по названию в алфавитном порядке.
     public static void sortSaleByTitle(List<ComicBook> list) {
         list.stream()
                 .sorted(new ComparatorTitle())
                 .forEach(MethodOutput::printComic);
     }
 
+    //Выволит List<ComicBook>, отсортированный по объему продаж в порядке убывания.
     public static void sortAllSale(List<ComicBook> list) {
         list.stream()
                 .sorted(new ComparatorSaleCb())
                 .forEach(MethodOutput::printComic);
     }
 
-    public static void sortSaleComicBookSale(List<ComicBookSale>list){
+    //Выводит List<ComicBookSale>, отсортированный по продажам по жанру по убыванию
+    public static void sortSaleComicBookSaleByGenre(List<ComicBookSale>list){
         list.stream()
                 .sorted(new ComparatorSaleCbs())
                 .forEach(MethodOutput::printComicSalesByGenre);
     }
 
+    //Выводит List<ComicBookSale> отсортированный по дате продажи по возрастанию.
     public static void sortBySalesData(List<ComicBookSale> list) {
         list.stream()
                 .sorted(new ComparatorData())
                 .forEach(MethodOutput::printComicSales);
     }
 
+
+    //формирует List<ComicBookSale> по паре "жанр/продажи".
     public static void sortSalesByGenre(List<ComicBookSale> list) {
 
         List<ComicBookSale> cbs = new ArrayList<>();
@@ -65,6 +70,11 @@ public class MethodSort {
                 }
             }
         }
-        sortSaleComicBookSale(cbs);
+        sortSaleComicBookSaleByGenre(cbs);
     }
+
+    public static void sortByAuthor(List<ComicBookSale>list){
+
+    }
+
 }
