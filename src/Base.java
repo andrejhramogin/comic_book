@@ -2,15 +2,18 @@ import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ComicBase implements Serializable {
+public class Base implements Serializable {
 
-    List<ComicBook> comicBook = new ArrayList<>();
+    private List<ComicBook> listComic = new ArrayList<>();
 
-    public ComicBase(List<ComicBook> list) {
-        this.comicBook = list;
+    public Base() {
     }
 
-    public List<ComicBook> getComicBook() {
-        return this.comicBook;
+    public Base(List<ComicBook> lcb) {
+        this.listComic = lcb;
+    }
+
+    public List<ComicBook> getListComic() {
+        return this.listComic;
     }
 }

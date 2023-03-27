@@ -1,14 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="efd6a181-5e24-4dc3-a41f-4e935cf39887" name="Changes" comment="" />
+    <list default="true" id="efd6a181-5e24-4dc3-a41f-4e935cf39887" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/comic.bin" beforeDir="false" afterPath="$PROJECT_DIR$/comic.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/comic2.bin" beforeDir="false" afterPath="$PROJECT_DIR$/comic2.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Base.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Base.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BaseSales.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BaseSales.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ComicBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ComicBook.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ComicBookSale.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ComicBookSale.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ComicGenre.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ComicGenre.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ComparatorData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ComparatorData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ComparatorSale.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ComparatorSale.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ComparatorTitle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ComparatorTitle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MethodAddDelete.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MethodAddDelete.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MethodEditing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MethodEditing.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MethodOutput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MethodOutput.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MethodSale.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MethodSale.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MethodSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MethodSearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MethodSellStatistic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MethodSellStatistic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MethodSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MethodSort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ReadFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ReadFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UiAdmin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UiAdmin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UiMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UiMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/WriteFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/WriteFile.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2MGdvZCe2cN5X6BedZOmAHcDOwL" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -20,9 +56,25 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "/home/andrei/IdeaProjects/comic_book"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="comic_book" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -39,10 +91,32 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

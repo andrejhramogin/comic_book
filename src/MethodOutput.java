@@ -1,12 +1,12 @@
 import java.util.List;
 
-public class MethodPrintOutput {
+public class MethodOutput {
 
     public static void printList(List<ComicBook> listCb) {
         if (listCb.isEmpty()) {
             System.out.println(UiMessage.EMPTY_LIST);
         } else {
-            listCb.forEach(MethodPrintOutput::printComic);
+            listCb.forEach(MethodOutput::printComic);
         }
     }
 
@@ -26,20 +26,20 @@ public class MethodPrintOutput {
                         UiMessage.SALES_VOLUME + cb.getNumberOfSales());
     }
 
-    public static void printList1(List<ComicBookSale> listCb) {
-        if (listCb.isEmpty()) {
+    public static void printList1(List<ComicBookSale> listCbs) {
+        if (listCbs.isEmpty()) {
             System.out.println(UiMessage.EMPTY_LIST);
         } else {
-            listCb.forEach(MethodPrintOutput::printComicSales);
+            listCbs.forEach(MethodOutput::printComicSales);
         }
     }
 
-    public static void printComicSales(ComicBookSale cb){
+    public static void printComicSales(ComicBookSale cbs){
         System.out.println(
-                        UiMessage.TITLE + cb.getTitle() + UiMessage.SEP +
-                        UiMessage.AUTHOR + cb.getAuthor() + UiMessage.SEP +
-                        UiMessage.GENRE + cb.getGenre() + UiMessage.SEP +
-                        UiMessage.SALES_VOLUME + cb.getSale() + UiMessage.SEP +
-                        UiMessage.DATA + cb.getDate());
+                        UiMessage.TITLE + cbs.getTitle() + UiMessage.SEP +
+                        UiMessage.AUTHOR + cbs.getAuthor() + UiMessage.SEP +
+                        UiMessage.GENRE + cbs.getGenre() + UiMessage.SEP +
+                        UiMessage.SALES_VOLUME + cbs.getSale() + UiMessage.SEP +
+                        UiMessage.DATA + cbs.getDate());
     }
 }

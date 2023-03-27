@@ -2,7 +2,7 @@ import java.util.InputMismatchException;
 import java.util.List;
 import java.util.Scanner;
 
-public class Method {
+public class MethodAddDelete {
 
     public static Scanner scanner = new Scanner(System.in);
 
@@ -52,7 +52,6 @@ public class Method {
 
     public static void addComic(List<ComicBook> listCb) {
 
-        scanner.nextLine();
         checkPresence(listCb);
         if (isSameTitle) return;
 
@@ -86,11 +85,12 @@ public class Method {
         comicBook.setNumberOfSales(UiMessage.ZERO);
 
         listCb.add(comicBook);
-        WriteFile.writeToFile(listCb);
+        WriteFile.writeToFile(listCb, "comic.bin");
     }
 
     /**
-     * Проверяет есть ли в списке комикс с таким названием, и, если есть, увеличивает его количество на
+     * Если лист NULL, то сразу записывает название комикса.
+     * Усли список NOT NULL, проверяет есть ли в списке комикс с таким названием, и, если есть, увеличивает его количество на
      * задаваемую величину. После чего записывает список в файл, меняет флаг и метод создания нового комискса
      * заканчивает работу.
      * Если комикса с таким названием еще нет, то записывает новое название и создание нового комикса продолжается.
@@ -98,13 +98,18 @@ public class Method {
     public static void checkPresence(List<ComicBook> listCb) {
         System.out.println(UiMessage.TITLE);
         String title = getString();
-        for (ComicBook cb : listCb) {
-            if (title.equalsIgnoreCase(cb.getTitle())) {
-                System.out.println(UiMessage.QUANTITY);
-                cb.setComicQuantity(cb.getComicQuantity() + Method.getInteger());
-                WriteFile.writeToFile(listCb);
-                isSameTitle = true;
-            } else comicBook.setTitle(title);
+
+        if (listCb.isEmpty()) {
+            comicBook.setTitle(title);
+        } else {
+            for (ComicBook cb : listCb) {
+                if (title.equalsIgnoreCase(cb.getTitle())) {
+                    System.out.println(UiMessage.QUANTITY);
+                    cb.setComicQuantity(cb.getComicQuantity() + MethodAddDelete.getInteger());
+                    WriteFile.writeToFile(listCb, "comic.bin");
+                    isSameTitle = true;
+                } else comicBook.setTitle(title);
+            }
         }
     }
 
@@ -112,10 +117,9 @@ public class Method {
      * Удаляет комикс по названию.
      */
     public static void delete(List<ComicBook> listCb) {
-        scanner.nextLine();
         System.out.println(UiMessage.ENTER_TITLE);
-        String comicToDel = Method.getString();
+        String comicToDel = MethodAddDelete.getString();
         listCb.removeIf(cb -> cb.getTitle().equalsIgnoreCase(comicToDel));
-        WriteFile.writeToFile(listCb);
+        WriteFile.writeToFile(listCb, "comic.bin");
     }
 }

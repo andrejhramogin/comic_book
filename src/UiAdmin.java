@@ -1,43 +1,48 @@
 import java.util.List;
-import java.util.Scanner;
 
-public class Ui {
+public class UiAdmin {
 
-    public void listManagement() {
+    public static void manageList() {
 
-        List<ComicBook> listCb = ReadFile.readListFromFile();
+        List<ComicBook> listCb = ReadFile.readBaseFromFile().getListComic();
+        List<ComicBookSale> listCbs = ReadFile.readBaseSalesFromFile().getListComic();
 
         if (listCb.isEmpty()) {
-            System.out.println("List is empty.");
+            System.out.println(UiMessage.EMPTY_LIST);
         }
 
-        System.out.println(
-                "\nView the list - enter 1" +
-                "\nAdd comic - enter 2" +
-                "\nDelete comic book by title - enter 3" +
-                "\nFind comic book (by title or author or genre) - enter 4" +
-                "\nClose the program - enter 0.");
+        System.out.println(UiMessage.START_MENU);
+        int num = MethodAddDelete.getInteger();
+        MethodAddDelete.scanner.nextLine();
 
-        Scanner scanner = new Scanner(System.in);
-        int num = scanner.nextInt();
-        Method method = new Method();
         switch (num) {
             case 0:
                 return;
             case 1:
-                method.printList(listCb);
+                MethodOutput.printList(listCb);
                 break;
             case 2:
-                method.addComic(listCb);
+                MethodAddDelete.addComic(listCb);
                 break;
             case 3:
-                method.delete(listCb);
+                MethodAddDelete.delete(listCb);
                 break;
             case 4:
-                method.find(listCb);
+                MethodSearch.find(listCb);
                 break;
-
+            case 5:
+                MethodEditing.edit(listCb);
+                break;
+            case 6:
+                MethodSort.sort(listCb);
+                break;
+            case 7:
+                MethodSale.sell(listCb, listCbs);
+                break;
+            case 8:
+                MethodSellStatistic.viewStat(listCbs);
+                break;
         }
-        listManagement();
+        manageList();
     }
 }
