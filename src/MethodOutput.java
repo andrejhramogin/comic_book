@@ -10,10 +10,10 @@ public class MethodOutput {
         }
     }
 
-    public static void printComic(ComicBook cb){
+    public static void printComic(ComicBook cb) {
 
         System.out.println(
-                        UiMessage.TITLE + cb.getTitle() + UiMessage.SEP +
+                UiMessage.TITLE + cb.getTitle() + UiMessage.SEP +
                         UiMessage.AUTHOR + cb.getAuthor() + UiMessage.SEP +
                         UiMessage.PUBLISHING_HOUSE + cb.getPublishingHouse() + UiMessage.SEP +
                         UiMessage.PAGES_NUMBER + cb.getPagesNumber() + UiMessage.SEP +
@@ -34,12 +34,18 @@ public class MethodOutput {
         }
     }
 
-    public static void printComicSales(ComicBookSale cbs){
+    public static void printComicSales(ComicBookSale cbs) {
         System.out.println(
                         UiMessage.TITLE + cbs.getTitle() + UiMessage.SEP +
                         UiMessage.AUTHOR + cbs.getAuthor() + UiMessage.SEP +
                         UiMessage.GENRE + cbs.getGenre() + UiMessage.SEP +
                         UiMessage.SALES_VOLUME + cbs.getSale() + UiMessage.SEP +
                         UiMessage.DATA + cbs.getDate());
+    }
+
+    public static void printComicSalesByGenre(ComicBookSale cbs) {
+        System.out.println(
+                        UiMessage.GENRE + cbs.getGenre() + UiMessage.SEP +
+                        UiMessage.SALES_VOLUME + cbs.getSale() + UiMessage.SEP);
     }
 }
