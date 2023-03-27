@@ -3,10 +3,16 @@ import java.time.LocalDate;
 
 public class ComicBookSale extends ComicBook implements Serializable {
 
-    private final LocalDate date;
+    private LocalDate date;
+
+
+
     private int sale;
 
-
+    public ComicBookSale(String genre, int sale) {
+        super(genre);
+        this.sale = sale;
+    }
     public ComicBookSale(String title, String author, String genre, int sale, LocalDate date) {
         super(title, author, genre);
         this.sale = sale;
@@ -32,5 +38,9 @@ public class ComicBookSale extends ComicBook implements Serializable {
 
     public int getSale() {
         return sale;
+    }
+
+    public void setSale(int sale) {
+        this.sale = sale;
     }
 }

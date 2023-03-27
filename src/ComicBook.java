@@ -24,6 +24,10 @@ public class ComicBook implements Serializable {
         this.genre = genre;
     }
 
+    public ComicBook(String genre){
+        this.genre = genre;
+    }
+
     public ComicBook(String title,
                      String author,
                      String publishingHouse,
