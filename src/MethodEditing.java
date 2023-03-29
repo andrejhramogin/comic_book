@@ -54,7 +54,7 @@ public class MethodEditing {
                 cb.setPagesNumber(MethodAddDelete.getInteger());
                 break;
             case "q":
-                System.out.println(UiMessage.QUANTITY);
+                System.out.println(UiMessageEnum.QUANTITY.getStr());
                 cb.setComicQuantity(MethodAddDelete.getInteger());
                 break;
             case "g":

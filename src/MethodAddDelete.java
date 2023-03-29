@@ -67,7 +67,7 @@ public class MethodAddDelete {
         System.out.println(UiMessage.IS_SEQUEL);
         comicBook.setContinuation(getString());
 
-        System.out.println(UiMessage.QUANTITY);
+        System.out.println(UiMessageEnum.QUANTITY.getStr());
         comicBook.setComicQuantity(getInteger());
 
         System.out.println(UiMessage.YEAR_OF_PUBLICATION);
@@ -104,7 +104,7 @@ public class MethodAddDelete {
         } else {
             for (ComicBook cb : listCb) {
                 if (title.equalsIgnoreCase(cb.getTitle())) {
-                    System.out.println(UiMessage.QUANTITY);
+                    System.out.println(UiMessageEnum.QUANTITY.getStr());
                     cb.setComicQuantity(cb.getComicQuantity() + MethodAddDelete.getInteger());
                     WriteFile.writeToFile(listCb, "comic.bin");
                     isSameTitle = true;

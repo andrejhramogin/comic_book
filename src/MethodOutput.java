@@ -13,16 +13,16 @@ public class MethodOutput {
     public static void printComic(ComicBook cb) {
 
         System.out.println(
-                UiMessage.TITLE + cb.getTitle() + UiMessage.SEP +
-                        UiMessage.AUTHOR + cb.getAuthor() + UiMessage.SEP +
-                        UiMessage.PUBLISHING_HOUSE + cb.getPublishingHouse() + UiMessage.SEP +
-                        UiMessage.PAGES_NUMBER + cb.getPagesNumber() + UiMessage.SEP +
-                        UiMessage.GENRE + cb.getGenre() + UiMessage.SEP +
-                        UiMessage.YEAR_OF_PUBLICATION + cb.getYear() + UiMessage.SEP +
-                        UiMessage.COST_PRICE + cb.getCostPrice() + UiMessage.SEP +
-                        UiMessage.RETAIL_PRICE + cb.getRetailPrice() + UiMessage.SEP +
-                        UiMessage.CONTINUATION + cb.getContinuation() + UiMessage.SEP +
-                        UiMessage.QUANTITY + cb.getComicQuantity() + UiMessage.SEP +
+                UiMessage.TITLE + cb.getTitle() + UiMessageEnum.SEP.getStr() +
+                        UiMessage.AUTHOR + cb.getAuthor() + UiMessageEnum.SEP.getStr() +
+                        UiMessage.PUBLISHING_HOUSE + cb.getPublishingHouse() + UiMessageEnum.SEP.getStr() +
+                        UiMessage.PAGES_NUMBER + cb.getPagesNumber() + UiMessageEnum.SEP.getStr() +
+                        UiMessage.GENRE + cb.getGenre() + UiMessageEnum.SEP.getStr() +
+                        UiMessage.YEAR_OF_PUBLICATION + cb.getYear() + UiMessageEnum.SEP.getStr() +
+                        UiMessage.COST_PRICE + cb.getCostPrice() + UiMessageEnum.SEP.getStr() +
+                        UiMessage.RETAIL_PRICE + cb.getRetailPrice() + UiMessageEnum.SEP.getStr() +
+                        UiMessage.CONTINUATION + cb.getContinuation() + UiMessageEnum.SEP.getStr() +
+                        UiMessageEnum.QUANTITY.getStr() + cb.getComicQuantity() + UiMessageEnum.SEP.getStr() +
                         UiMessage.SALES_VOLUME + cb.getNumberOfSales());
     }
 
@@ -37,17 +37,17 @@ public class MethodOutput {
     //Выводит ComicBookSale (название, автор, жанр, продажи, дата продажи)
     public static void printComicSales(ComicBookSale cbs) {
         System.out.println(
-                        UiMessage.TITLE + cbs.getTitle() + UiMessage.SEP +
-                        UiMessage.AUTHOR + cbs.getAuthor() + UiMessage.SEP +
-                        UiMessage.GENRE + cbs.getGenre() + UiMessage.SEP +
-                        UiMessage.SALES_VOLUME + cbs.getSale() + UiMessage.SEP +
+                        UiMessage.TITLE + cbs.getTitle() + UiMessageEnum.SEP.getStr() +
+                        UiMessage.AUTHOR + cbs.getAuthor() + UiMessageEnum.SEP.getStr() +
+                        UiMessage.GENRE + cbs.getGenre() + UiMessageEnum.SEP.getStr() +
+                        UiMessage.SALES_VOLUME + cbs.getSale() + UiMessageEnum.SEP.getStr() +
                         UiMessage.DATA + cbs.getDate());
     }
 
     //Выводит ComicBookSale в виде пары "жанр/продажи"
     public static void printComicSalesByGenre(ComicBookSale cbs) {
         System.out.println(
-                        UiMessage.GENRE + cbs.getGenre() + UiMessage.SEP +
-                        UiMessage.SALES_VOLUME + cbs.getSale() + UiMessage.SEP);
+                        UiMessage.GENRE + cbs.getGenre() + UiMessageEnum.SEP.getStr() +
+                        UiMessage.SALES_VOLUME + cbs.getSale() + UiMessageEnum.SEP.getStr());
     }
 }

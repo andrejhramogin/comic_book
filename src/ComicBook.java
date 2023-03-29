@@ -153,10 +153,10 @@ public class ComicBook implements Serializable {
     }
 
     public void setContinuation(String continuation) {
-        if (continuation.equalsIgnoreCase(UiMessage.Y)) {
-            this.isContinuation = UiMessage.YES;
-        } else if (continuation.equalsIgnoreCase(UiMessage.N)) {
-            this.isContinuation = UiMessage.NO;
+        if (continuation.equalsIgnoreCase(UiMessageEnum.Y.getStr())) {
+            this.isContinuation = UiMessageEnum.YES.getStr();
+        } else if (continuation.equalsIgnoreCase(UiMessageEnum.N.getStr())) {
+            this.isContinuation = UiMessageEnum.NO.getStr();
         } else {
             System.out.println(UiMessage.IS_SEQUEL);
             setContinuation(MethodAddDelete.getString());
